@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #fffffe;
+  font-family: Candara, Calibri, sans-serif;
+}
+
+header {
+  color: #effeee;
+  background-color: #444444;
+  text-align: center;
+  padding: 32px 0 48px;
+  width: 100%;
+}
+
+header h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+#image {
+  height: auto;
+  width: 70%;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 12px;
+  display: block;
+}
+
+#img-div {
+  display: block;
+  /* align-items: center; */
+  text-align: center;
+  /* justify-content: center; */
+  margin: 24px auto;
+  width: 90%;
+}
+
+#img-caption {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #395e36;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#tribute-link:hover {
+  color: #253b24;
+}
+
+#tribute-info {
+  width: 80%;
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#tribute-info h3 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 24px;
+  padding-top: 24px;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  width: 70%;
+  display: block;
+  text-align: center;
+  align-items: center;
+  margin: 4px auto;
+  padding: 8px 0;
+}
+
+.info-list {
+  font-size: 18;
+}
+
+li {
+  padding: 8px 0;
+  list-style: none;
+}
+
+.divider {
+  display: block;
+  padding-top: 24px;
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 1px solid #2e2554;
+  align-items: center;
+}
+
+#footer {
+  width: 90%;
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0 60px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#footer .link {
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+}
