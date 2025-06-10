@@ -1,18 +1,21 @@
+import PageNav from '../components/PageNav';
+import styles from './RileyForm.module.css';
+
 function RileyForm() {
   return (
-    <div>
+    <div className={styles.rileyForm}>
       <h1 id="title">The Life of Riley Survey Form</h1>
-      <p id="description">
+      <p className={styles.description}>
         Please fill out this form, to help us understand who exactly is Riley,
         what is this life he/she/them/it is living, and how we can get us one.
       </p>
-      <form id="survey-form">
+      <form id="survey-form" className={styles.surveyForm}>
         <fieldset>
           <label htmlFor="name" id="name-label">
             Name:{' '}
             <input
               id="name"
-              className="full-width"
+              className={styles.fullWidth}
               type="text"
               placeholder="e.g. Icarus Reby"
               required
@@ -22,7 +25,7 @@ function RileyForm() {
             Email:{' '}
             <input
               id="email"
-              className="full-width"
+              className={styles.fullWidth}
               type="email"
               pattern="[a-z0-9]{8,}"
               placeholder=" e.g.icarus_flies@email.com"
@@ -34,7 +37,7 @@ function RileyForm() {
             Riley measure?{' '}
             <input
               id="number"
-              className="full-width"
+              className={styles.fullWidth}
               type="number"
               min="1"
               max="10"
@@ -42,9 +45,9 @@ function RileyForm() {
             />
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.dropdown}>
           <label htmlFor="dropdown">
-            <select id="dropdown" className="full-width">
+            <select id="dropdown" className={styles.fullWidth}>
               <option>Choose one option</option>
               <option>A. More wishes</option>
               <option>B. Endless wealth</option>
@@ -56,28 +59,28 @@ function RileyForm() {
             If your genie wish was option D. please confirm below if this is
             your actual answer, or the thing that you thought you ought to say
           </p>
-          <label htmlFor="honest-truth" className="inline">
+          <label htmlFor="honest-truth" className={styles.inline}>
             <input name="truth" type="radio" id="honest-truth" value="truth" />{' '}
             Yes, it's the honest truth
           </label>
-          <label htmlFor="outright-lie" className="inline">
+          <label htmlFor="outright-lie" className={styles.inline}>
             <input name="truth" type="radio" id="outright-lie" value="lie" />{' '}
             No, it's an outright lie
           </label>
         </fieldset>
         <fieldset>
           <p>What things would you like more of in your life?</p>
-          <label htmlFor="check-sleep" className="inline">
+          <label htmlFor="check-sleep" className={styles.inline}>
             <input id="check-sleep" type="checkbox" value="1" /> More sleep
           </label>
-          <label htmlFor="check-belongings" className="inline">
+          <label htmlFor="check-belongings" className={styles.inline}>
             <input id="check-belongings" type="checkbox" value="2" /> More
             belongings
           </label>
-          <label htmlFor="check-quiet" className="inline">
+          <label htmlFor="check-quiet" className={styles.inline}>
             <input id="check-quiet" type="checkbox" value="3" /> More quiet
           </label>
-          <label htmlFor="check-sun" className="inline">
+          <label htmlFor="check-sun" className={styles.inline}>
             <input id="check-sun" type="checkbox" value="4" /> More sunshine
           </label>
         </fieldset>
@@ -86,7 +89,7 @@ function RileyForm() {
             Describe in 500 words or less, your dream life of Riley
             <textarea
               id="comments"
-              className="full-width"
+              className={styles.fullWidth}
               rows="4"
               cols="35"
             ></textarea>
@@ -94,6 +97,7 @@ function RileyForm() {
         </fieldset>
         <input id="submit" type="submit" />
       </form>
+      <PageNav />
     </div>
   );
 }

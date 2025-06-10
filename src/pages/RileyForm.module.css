@@ -1,58 +1,64 @@
-body {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  background-color: #fcd703;
+.rileyForm {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #faf211;
   font-family: Verdana;
-  font-size: 16px;
+  font-size: 1rem;
+  color: #828d8f;
 }
 
-h1,
+.rileyForm h1,
 p {
-  color: #756f4c;
   margin: 1em auto;
   text-align: center;
 }
 
-#description {
-  padding-bottom: 2em;
+.description {
+  padding-bottom: 1em;
   font-size: 18px;
+  width: 80%;
 }
 
-fieldset {
+.rileyForm fieldset {
   border: none;
-  padding: 2rem 0;
-  border-bottom: 1.5px solid #ebc915;
+  padding: 1rem 0;
+  border-bottom: 1.5px solid #f5ee2a;
 }
 
-fieldset:last-of-type {
+.rileyForm fieldset:last-of-type {
   border-bottom: none;
 }
 
-#survey-form {
+.surveyForm {
   width: 80vw;
   max-width: 500px;
   min-width: 300px;
   padding: 0 2em 2em 2em;
-  background-color: #8c8979;
+  background-color: #828d8f;
   color: white;
   margin: 0 auto;
 }
 
-label {
+.surveyForm p {
+  text-align: left;
+}
+
+.rileyForm label {
   display: block;
   margin: 0.5rem 0;
 }
 
-.full-width {
+.fullWidth {
   margin: 10px 0 0 0;
   width: 100%;
   min-width: 300px;
   min-height: 2em;
 }
-#dropdown {
+/* .dropdown {
   margin-bottom: 1.5em;
-}
+  color: #5e686d;
+} */
 
 .inline {
   width: unset;
@@ -60,13 +66,19 @@ label {
   vertical-align: middle;
 }
 
-input[type='submit'] {
-  width: 70%;
-  display: block;
-  min-width: 300px;
+.rileyForm input[type='submit'] {
+  width: 45%;
   margin: 1em auto;
-  background-color: #4f4e4b;
+  padding: 0.4em;
+  background-color: #5e686d;
   color: white;
-  border-color: #424242;
-  font-size: 18px;
+  border: none;
+  border-radius: 0.1em;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.rileyForm input[type='submit']:hover {
+  background-color: #525c61;
+  color: #e8eced;
 }

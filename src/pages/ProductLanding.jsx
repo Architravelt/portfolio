@@ -1,3 +1,5 @@
+import PageNav from '../components/PageNav';
+
 function ProductLanding() {
   return (
     <>
@@ -334,6 +336,7 @@ function ProductLanding() {
           <p className="pinkish left">wish</p>
           <p className="pink">for.</p>
         </div>
+        <PageNav />
       </footer>
     </>
   );

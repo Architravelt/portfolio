@@ -1,3 +1,5 @@
+import PageNav from '../components/PageNav';
+
 function TechDoc() {
   return (
     <div>
@@ -441,6 +443,7 @@ function TechDoc() {
             Follow at your peril.
           </p>
         </section>
+        <PageNav />
       </main>
     </div>
   );
