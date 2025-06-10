@@ -1,0 +1,135 @@
+.birthdayApp {
+  width: 90%;
+  max-width: 600px;
+  margin: 24px auto;
+  border-radius: 12px;
+  text-align: center;
+  padding: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #d4f4fa;
+}
+
+.birthdayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.birthdayHeader h1 {
+  color: #de0037;
+  /* font-family: 'Sedgwick Ave Display', cursive; */
+  /* font-family: 'Inspiration', cursive; */
+  /* font-family: 'Birthstone Bounce', cursive; */
+  /* font-family: 'Knewave', system-ui; */
+  font-family: 'Condiment', cursive;
+  font-size: 3rem;
+}
+
+.birthdayApp button {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  /* border: 0.2px grey solid; */
+  color: #0a328a;
+  background-color: white;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: fit-content;
+  /* margin: 32px 0 0 0; */
+}
+
+.birthdayApp button:hover {
+  background-color: #f2f4f7;
+  color: darkblue;
+}
+
+.addBirthdayForm {
+  margin: 0 24px 24px;
+  background-color: #2b4f9c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+}
+
+.birthdayFormDetails {
+  background-color: white;
+  grid-column: span 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.birthdayFormSpace {
+  padding: 8px 0;
+}
+
+.birthdayFormButton {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: end;
+  text-align: right;
+}
+
+.birthdayFormButtonCancel {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: start;
+  text-align: right;
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 24px 24px;
+  padding: 18px 0;
+  border: 0.2px grey solid;
+  justify-content: center;
+  background-color: #2b4f9c;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.month {
+  width: 150px;
+  height: 150px;
+  border: 0.2px grey solid;
+  margin: 4px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.monthHeader h3 {
+  font-size: 1.12em;
+  font-family: sans-serif;
+}
+
+.birthdays {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: 'Karantina', system-ui;
+  font-weight: 400;
+  font-size: 1em;
+  color: #2b323d;
+  padding: 8;
+  margin: 0;
+}
+.birthdays p {
+  padding: 0;
+  margin: 0;
+}
+
+.birthdayText:hover {
+  transform: scale(1.5);
+  background-color: #f2f4f7;
+  border-radius: 18px;
+  padding: 2px;
+}

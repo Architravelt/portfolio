@@ -18,7 +18,7 @@ function Tribute() {
           </h2>
         </header>
 
-        <div id="img-div" classname={styles.imgDiv}>
+        <div id="img-div" className={styles.imgDiv}>
           <img
             className={styles.tributeImage}
             src="../grace-hopper.jpg"

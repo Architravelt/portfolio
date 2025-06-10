@@ -6,6 +6,9 @@ import RileyForm from './pages/RileyForm';
 import Tribute from './pages/Tribute';
 import Homepage from './pages/Homepage';
 import PageNotFound from './pages/PageNotFound';
+import AlgorithmArcade from './pages/AlgorithmArcade';
+import BirthdayPlotter from './pages/BirthdayPlotter';
+import CycleLanes from './pages/CycleLanes';
 
 function App() {
   return (
