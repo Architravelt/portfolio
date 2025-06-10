@@ -34,9 +34,7 @@ h3 {
 
 .imgDiv {
   display: block;
-  /* align-items: center; */
   text-align: center;
-  /* justify-content: center; */
   margin: 24px auto;
   width: 90%;
 }

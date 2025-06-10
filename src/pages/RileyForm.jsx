@@ -4,8 +4,8 @@ import styles from './RileyForm.module.css';
 function RileyForm() {
   return (
     <div className={styles.rileyForm}>
-      <h1 id="title">The Life of Riley Survey Form</h1>
-      <p className={styles.description}>
+      <h1 className={styles.rileyFormText}>The Life of Riley Survey Form</h1>
+      <p className={`${styles.description} ${styles.rileyFormText}`}>
         Please fill out this form, to help us understand who exactly is Riley,
         what is this life he/she/them/it is living, and how we can get us one.
       </p>
@@ -95,9 +95,11 @@ function RileyForm() {
             ></textarea>
           </label>
         </fieldset>
-        <input id="submit" type="submit" />
+        <div className={styles.rileyButtons}>
+          <input id="submit" type="submit" />
+          <PageNav />
+        </div>
       </form>
-      <PageNav />
     </div>
   );
 }

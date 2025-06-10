@@ -8,8 +8,7 @@
   color: #828d8f;
 }
 
-.rileyForm h1,
-p {
+.rileyFormText {
   margin: 1em auto;
   text-align: center;
 }
@@ -55,10 +54,6 @@ p {
   min-width: 300px;
   min-height: 2em;
 }
-/* .dropdown {
-  margin-bottom: 1.5em;
-  color: #5e686d;
-} */
 
 .inline {
   width: unset;
@@ -66,9 +61,14 @@ p {
   vertical-align: middle;
 }
 
+.rileyButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .rileyForm input[type='submit'] {
   width: 45%;
-  margin: 1em auto;
+  margin: 1em 1em 1em 0;
   padding: 0.4em;
   background-color: #5e686d;
   color: white;

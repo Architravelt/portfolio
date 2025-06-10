@@ -12,6 +12,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="algorithm" element={<AlgorithmArcade />} />
+        <Route path="birthday" element={<BirthdayPlotter />} />
+        <Route path="cycleLanes" element={<CycleLanes />} />
         <Route path="documentation" element={<TechDoc />} />
         <Route path="form" element={<RileyForm />} />
         <Route path="product" element={<ProductLanding />} />
